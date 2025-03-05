@@ -1,4 +1,24 @@
-Web scraper for vessel data on the CMA CGN website.     
-To run,
-1. Create a excel file with header `links` and place the url of the vessels below it.
-2. Run `scraper.py` and the output will be saved to an excel file named `combined_vessel_data.xlsx`.
+# Web Scraper for Container Ship Data (CMA registry)
+
+A Python-based web scraper using **Selenium** and **Beautiful Soup** to collect cargo, maintenance, and engine data on over 10,000 container ships. This scraper gathers vessel data from the online **CMA CGM** registry.
+
+## Features
+- Collects data on cargo, maintenance, and engine specifics of container ships
+- Outputs structured data for streamlined analysis
+
+## Setup Instructions
+
+### Prerequisites
+- **Python 3.x**
+- **Selenium**
+- **Beautiful Soup**
+- **Pandas**
+
+### Running the Scraper
+
+1. Create a `.xlsx` file containg the ID of ships under the header `links`
+2. Edit the file path of the excel file in `scraper.py`
+3. Run the following command:
+
+   ```bash
+   python scraper.py
